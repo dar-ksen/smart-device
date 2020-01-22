@@ -1,0 +1,63 @@
+.about-company {
+  padding: 50px 25px;
+
+  @media (max-width: $tablet-width) {
+    padding: 54px 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 37px 15px;
+  }
+}
+
+.about-company__wrap {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 190px;
+  background: url("../img/about-year-desktop@1x.png") left -20px top 15px no-repeat;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+  }
+}
+
+.about-company__content {
+  & h2 {
+    margin: 0 0 18px;
+    font-family: $roboto-condensed;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+
+    @media (max-width: $tablet-width) {
+      margin: 0 0 24px;
+      font-size: 32px;
+      line-height: 140.62%;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 18px;
+      font-size: 28px;
+    }
+  }
+
+  & p {
+    line-height: 22px;
+    margin: 0 0 15px;
+  }
+
+  & .about-company__tablet-text {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      display: inline;
+    }
+  }
+
+  & .about-company__desktop-text {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

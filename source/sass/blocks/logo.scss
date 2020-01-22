@@ -1,0 +1,50 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+
+  min-width: 216px;
+
+  @media (max-width: $mobile-width) {
+    min-width: 193px;
+  }
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+
+  &--header {
+    @media (max-width: $mobile-width) {
+      @include hide;
+    }
+  }
+}
+
+.logo__name {
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 40px;
+
+  &--footer {
+    font-size: 25px;
+  }
+}
+
+.logo__slogan {
+  font-family: $roboto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 9px;
+  color: $light-grey-color;
+}
+
+.logo__image {
+  &--footer {
+    @media (max-width: $mobile-width) {
+      width: 52px;
+    }
+  }
+}

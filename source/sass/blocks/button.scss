@@ -1,0 +1,48 @@
+.button {
+  font-family: $roboto-condensed;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  padding: 13px 28px;
+
+  border: 1px white solid;
+  border-radius: 5px;
+
+  letter-spacing: 0.6px;
+  transition: 0.9s;
+
+  &:hover {
+    opacity: 1;
+    background-color: $blue-color;
+    border-color: $blue-color;
+    color: white;
+  }
+
+  &--consult {
+    background-color: $blue-color;
+    border-color: $blue-color;
+    color: white;
+    padding: 18.5px 0;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+
+    @media (max-width: $tablet-width) {
+      padding: 18.5px 30px;
+    }
+
+    @media (max-width: $mobile-width) {
+      letter-spacing: 0.9px;
+      margin: 0 auto;
+    }
+
+    &:hover {
+      background-color: white;
+      color: $blue-color;
+      border-color: white;
+    }
+  }
+}

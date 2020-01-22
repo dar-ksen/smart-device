@@ -4,10 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div style="display: none;">
+    <include src="./build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <div class="header__top">
+        <a class="header__logo logo" href="#" aria-label="Логотип Smart Device">
+          <img src="img/logo.svg" alt="Smart Device" width="52" height="52">
+          <div class="logo__text logo__text--header">
+            <span class="logo__name">Smart Device</span>
+            <span class="logo__slogan">умные технологии</span>
+          </div>
+        </a>
+        <ul class="header__contact">
+          <li>
+            <a class="header__contact-item header__contact-item--email" href="mailto:info@sd.ru" aria-label="Напишите нам">
+              <span>info@sd.ru</span>
+            </a>
+          </li>
+          <li>
+            <a class="header__contact-item header__contact-item--mobile" href="tel:+74950005252" aria-label="Позвоните нам">
+              <span>+7 (495) 000 52 52</span>
+            </a>
+          </li>
+          <li>
+            <a class="header__contact-item header__contact-item--btn button" href="#">Заказать звонок</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__slider">
+        <div class="header__slide">
+          <div class="header__slide-text">
+            <h2>Печатные платы</h2>
+            <p class="header__slide-description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <a class="header__consult-btn button button--consult" href="#form">
+              <span class="header__btn-text header__btn-text--desktop">Получить бесплатную консультацию</span>
+              <span class="header__btn-text header__btn-text--mobile">Бесплатная консультация</span>
+            </a>
+            <a class="header__scroll" href="#advantages">Скролл вниз</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Производство и продажа электронных комлектующих</h1>
+    <div class="page-main__company">
+      <section class="features">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <svg width="40" height="45"><use xlink:href="#icon-efficiency"></use></svg>
+            <h3>Оперативные сроки</h3>
+            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          </li>
+          <li class="features__item">
+            <svg width="35" height="35"><use xlink:href="#icon-suppliers"></use></svg>
+            <h3>Крупные поставщики</h3>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+          </li>
+          <li class="features__item">
+            <svg width="35" height="35"><use xlink:href="#icon-confidentiality"></use></svg>
+            <h3>Полная конфиденциальность</h3>
+            <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
+          </li>
+          <li class="features__item">
+            <svg width="35" height="35"><use xlink:href="#icon-personalization"></use></svg>
+            <h3>Персонализация стоимости</h3>
+            <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="about-company">
+        <div class="about-company__wrap">
+          <div class="about-company__content">
+            <h2>О компании</h2>
+            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+
+            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about-company__tablet-text">..</span> <span class="about-company__desktop-text">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
+        </div>
+        <a href="#" class="about-company__btn button">Подробнее</a>
+        </div>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
