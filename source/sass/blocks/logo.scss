@@ -12,6 +12,7 @@
 .logo__text {
   display: flex;
   flex-direction: column;
+
   padding-left: 16px;
 
   &--header {
@@ -23,9 +24,9 @@
 
 .logo__name {
   font-family: $roboto-condensed;
-  font-style: normal;
-  font-weight: bold;
   font-size: 25px;
+  font-weight: 700;
+  font-style: normal;
   line-height: 40px;
 
   &--footer {
@@ -34,11 +35,12 @@
 }
 
 .logo__slogan {
-  font-family: $roboto;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 9px;
   color: $light-grey-color;
+
+  font-family: $roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 9px;
 }
 
 .logo__image {

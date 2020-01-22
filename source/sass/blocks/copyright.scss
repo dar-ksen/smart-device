@@ -1,0 +1,28 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+
+  text-transform: uppercase;
+}
+
+.copyright__wrap-desctop {
+  display: flex;
+  justify-content: space-between;
+
+  width: 457px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.copyright__item {
+  letter-spacing: 0.04em;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.copyright__link {
+  color: #1b2d37;
+}

@@ -1,0 +1,10 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include list;
+}
+
+.social-links__link {
+  margin-right: 15px;
+}

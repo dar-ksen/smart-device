@@ -1,0 +1,17 @@
+.contacts__header {
+  position: relative;
+}
+
+.contacts__list {
+  @include list;
+}
+
+.contacts__item {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(27, 45, 55, 0.5);
+}
+
+.contacts__link {
+  color: inherit;
+}

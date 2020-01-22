@@ -1,0 +1,51 @@
+.acordion {
+  @media (max-width: $mobile-width) {
+    &--close {
+      & .acordion__body {
+        display: none;
+      }
+
+      & .acordion__toggle {
+        &::after {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}
+
+.acordion__toggle {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    right: 15px;
+
+    width: 16px;
+    height: 16px;
+
+    border: none;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+
+      content: "";
+      background-color: #c4c4c4;
+      transition: transform 0.3s;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+}

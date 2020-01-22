@@ -32,7 +32,7 @@
   }
 }
 
-.header__wrapper {
+.header__wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,7 +83,6 @@
   }
 
   @media (max-width: $mobile-width) {
-
     min-width: 80px;
     margin-top: 10px;
     padding-left: 0;
@@ -196,13 +195,13 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    background-size: 530px 505px;
     background-position: right -130px top -110px;
+    background-size: 530px 505px;
   }
 
   @media (max-width: $mobile-width) {
-    background-size: 595px 550px;
     background-position: left 70px top -125px;
+    background-size: 595px 550px;
   }
 }
 
