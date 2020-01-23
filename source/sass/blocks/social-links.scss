@@ -1,8 +1,9 @@
 .social-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 
-  @include list;
+  @include reset-list;
 }
 
 .social-links__link {

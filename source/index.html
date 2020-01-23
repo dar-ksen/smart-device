@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
   <div style="display: none;">
@@ -44,7 +45,7 @@
           <div class="header__slide-text">
             <h2>Печатные платы</h2>
             <p class="header__slide-description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a class="header__consult-btn button button--consult" href="#form">
+            <a class="header__consult-btn button button--consult" href="#feedback">
               <span class="header__btn-text header__btn-text--desktop">Получить бесплатную консультацию</span>
               <span class="header__btn-text header__btn-text--mobile">Бесплатная консультация</span>
             </a>
@@ -62,7 +63,7 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="features__list">
           <li class="features__item">
-            <svg width="40" height="45"><use xlink:href="#icon-efficiency"></use></svg>
+            <svg width="35" height="35"><use xlink:href="#icon-efficiency"></use></svg>
             <h3>Оперативные сроки</h3>
             <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </li>
@@ -91,10 +92,51 @@
 
             <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about-company__tablet-text">..</span> <span class="about-company__desktop-text">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
         </div>
-        <a href="#" class="about-company__btn button">Подробнее</a>
+        <a href="#" class="about-company__btn button button--about-company">Подробнее</a>
         </div>
       </section>
     </div>
+
+    <section class="service">
+      <div class="service__wrap">
+        <h2>Service Device предлагает следующие товары и услуги</h2>
+        <ul class="service__list">
+          <li class="service__item">
+            <a class="service__link service__link--prop" href="">
+              <h3>Производство печатных плат</h3>
+            </a>
+          </li>
+          <li class="service__item">
+            <a class="service__link service__link--mounting" href="">
+              <h3>Монтаж печатных плат</h3>
+            </a>
+          </li>
+          <li class="service__item">
+            <a class="service__link service__link--comp" href="">
+              <h3>Комплектующие для светотехники</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="feedback__wrap">
+        <div class="feedback__form-wrap">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form class="feedback__form" method="post" action="#">
+            <div class="feedback__contact">
+              <label class="visually-hidden" for="user-name">Ваше имя</label>
+              <input type="text" name="user-name" placeholder="Имя" id="user-name">
+              <label class="visually-hidden" for="user-phone">Ваш номер</label>
+              <input type="tel" name="user-phone" placeholder="Телефон" id="user-phone">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
@@ -162,7 +204,9 @@
             <button class="acordion__toggle" aria-label="Показать/Скрыть"></button>
           </div>
           <ul class="contacts__list acordion__body">
-            <li class="contacts__item">г. Мытищи, Олимпийский проспект, д.10</li>
+            <li class="contacts__item">
+              <a class="contacts__link" target="_blank" href="https://goo.gl/maps/taT4RJuBmU7FEcrt9">г. Мытищи, Олимпийский проспект, д.10</a>
+            </li>
             <li class="contacts__item">
               <a class="contacts__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
             </li>

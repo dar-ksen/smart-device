@@ -1,5 +1,5 @@
 .features {
-  padding: 109px 25px;
+  padding: 110px 25px 30px;
 
   @media (max-width: $tablet-width) {
     padding: 54px 25px;
@@ -20,41 +20,56 @@
 }
 
 .features__item {
+  position: relative;
+
   flex-grow: 1;
 
   width: 45.72%;
   max-width: 48.72%;
   margin: 0 30px 30px 0;
-  padding: 50px 45px 50px 42px;
+  padding: 40px 36px 40px 52px;
+  min-height: 300px;
 
   list-style: none;
 
   cursor: pointer;
-  transition: 0.9s;
+  transition: background-color 0.9s;
 
   border: 1px solid #ebebeb;
-  border-left: 3px solid $blue-color;
   background-color: $white-color;
 
   &:nth-child(2n) {
     margin-right: 0;
   }
 
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 3px;
+
+    content: "";
+
+    background-color: $blue-color;
+  }
+
   @media (max-width: $tablet-width) {
-    padding: 25px 21px 34px 27px;
     min-height: none;
+    padding: 25px 21px 34px 27px;
   }
 
   @media (max-width: $mobile-width) {
-    max-width: none;
     width: 100%;
+    max-width: none;
     margin-right: 0;
   }
 
   & svg {
-    margin-bottom: 23px;
+    margin-bottom: 15px;
 
-    transition: 0.9s;
+    transition: fill 0.9s;
 
     fill: $blue-color;
 
@@ -66,7 +81,7 @@
   & h3 {
     margin: 0 0 15px;
 
-    transition: 0.9s;
+    transition: color 0.9s;
 
     color: $blue-color;
 
@@ -84,7 +99,7 @@
   & p {
     margin: 0;
 
-    transition: 0.9s;
+    transition: color 0.9s;
 
     font-size: 16px;
     font-weight: 500;

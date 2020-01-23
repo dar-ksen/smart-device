@@ -7,17 +7,17 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
 
-  border: 1px white solid;
+  border: 1px $white-color solid;
   border-radius: 5px;
 
   font-family: $roboto-condensed;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 16px;
 
   &:hover {
     opacity: 1;
-    color: white;
+    color: $white-color;
     border-color: $blue-color;
     background-color: $blue-color;
   }
@@ -27,7 +27,7 @@
 
     letter-spacing: 0.8px;
 
-    color: white;
+    color: $white-color;
     border-color: $blue-color;
     background-color: $blue-color;
 
@@ -45,8 +45,13 @@
 
     &:hover {
       color: $blue-color;
-      border-color: white;
-      background-color: white;
+      border-color: $white-color;
+      background-color: $white-color;
     }
+  }
+
+  &--about-company {
+    color: $blue-color;
+    border-color: $blue-color;
   }
 }

@@ -1,5 +1,5 @@
 .about-company {
-  padding: 50px 25px;
+  padding: 48px 25px 96px;
 
   @media (max-width: $tablet-width) {
     padding: 54px 25px;
@@ -14,13 +14,32 @@
   position: relative;
 
   max-width: 1170px;
+  min-height: 317px;
   margin: 0 auto;
   padding-left: 190px;
+  display: flex;
+  flex-direction: column;
 
-  background: url("../img/about-year-desktop@1x.png") left -20px top 15px no-repeat;
+  background: url("../img/about-year-desktop@1x.png") left -20px top 0 no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/about-year-desktop@2x.png");
+    background-size: 220px 317px;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 362px;
+    background: url("../img/about-year-tablet@1x.png") left -20px top 0 no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-year-tablet@2x.png");
+      background-size: 244px 362px;
+    }
+  }
 
   @media (max-width: $mobile-width) {
     padding-left: 0;
+    background: none;
   }
 }
 
@@ -31,7 +50,7 @@
     font-family: $roboto-condensed;
     font-size: 36px;
     font-weight: 500;
-    line-height: 51px;
+    line-height: 141.666%;
 
     @media (max-width: $tablet-width) {
       margin: 0 0 24px;
@@ -48,9 +67,17 @@
   }
 
   & p {
-    margin: 0 0 15px;
+    margin: 0 0 20px;
 
     line-height: 22px;
+
+    @media (max-width: $tablet-width) {
+      margin: 0 0 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 30px;
+    }
   }
 
   & .about-company__tablet-text {
@@ -66,4 +93,9 @@
       display: none;
     }
   }
+}
+
+.about-company__btn {
+  margin: auto 0 10px;
+  width: 180px;
 }

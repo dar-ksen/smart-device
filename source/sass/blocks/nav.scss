@@ -3,21 +3,23 @@
 }
 
 .nav__list {
-  display: flex;
-  flex-wrap: wrap;
+  @include reset-list;
 
-  @include list;
+  @media (min-width: $desctop-width-only) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .nav__item {
-  width: 50%;
-
   color: rgba(27, 45, 55, 0.5);
 
   font-size: 15px;
   line-height: 25px;
 
   @media (min-width: $desctop-width-only) {
+    width: 50%;
+
     &--about {
       order: 1;
     }

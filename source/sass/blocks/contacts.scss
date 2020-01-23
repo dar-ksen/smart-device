@@ -3,7 +3,7 @@
 }
 
 .contacts__list {
-  @include list;
+  @include reset-list;
 }
 
 .contacts__item {
