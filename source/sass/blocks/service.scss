@@ -1,15 +1,14 @@
 .service {
-  padding: 93px 25px 127px;
+  padding: 93px 0 127px;
 
   background-color: #1b2d37;
 
   @media (max-width: $tablet-width) {
-    padding-top: 53px;
-    padding-bottom: 78px;
+    padding: 53px 0 78px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 53px 15px 64px;
+    padding: 53px 0 64px;
   }
 
   & h2 {
@@ -33,11 +32,6 @@
       font-size: 28px;
     }
   }
-}
-
-.service__wrap {
-  max-width: 1170px;
-  margin: 0 auto;
 }
 
 .service__list {

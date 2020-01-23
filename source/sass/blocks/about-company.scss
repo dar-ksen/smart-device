@@ -1,22 +1,20 @@
 .about-company {
-  padding: 48px 25px 96px;
+  padding: 48px 0 96px;
 
   @media (max-width: $tablet-width) {
-    padding: 54px 25px;
+    padding: 54px 0;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 37px 15px;
+    padding: 37px 0;
   }
 }
 
 .about-company__wrap {
   position: relative;
 
-  max-width: 1170px;
   min-height: 317px;
-  margin: 0 auto;
-  padding-left: 190px;
+  padding-left: 215px;
   display: flex;
   flex-direction: column;
 
@@ -38,7 +36,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-left: 0;
+    padding-left: 15px;
     background: none;
   }
 }
