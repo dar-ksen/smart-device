@@ -1,8 +1,8 @@
 .about-company {
-  padding: 48px 0 96px;
+  padding: 75px 0 96px;
 
   @media (max-width: $tablet-width) {
-    padding: 54px 0;
+    padding: 38px 0 72px;
   }
 
   @media (max-width: $mobile-width) {
@@ -14,11 +14,11 @@
   position: relative;
 
   min-height: 317px;
-  padding-left: 215px;
+  padding-left: 211px;
   display: flex;
   flex-direction: column;
 
-  background: url("../img/about-year-desktop@1x.png") left 0 top 0 no-repeat;
+  background: url("../img/about-year-desktop@1x.png") left -7px top 2px no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/about-year-desktop@2x.png");
@@ -27,7 +27,7 @@
 
   @media (max-width: $tablet-width) {
     min-height: 362px;
-    background-image: url("../img/about-year-tablet@1x.png");
+    background: url("../img/about-year-tablet@1x.png") left top no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/about-year-tablet@2x.png");

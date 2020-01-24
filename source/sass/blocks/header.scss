@@ -1,10 +1,8 @@
 .header {
-  max-width: auto;
-
-  color: $white-color;
+  color: $white;
   background-color: $bg-header-color;
   background-image: url("../img/header-bg-desktop@1x.png");
-  background-position: left top;
+  background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header-bg-desktop@2x.png");
@@ -36,23 +34,23 @@
   display: flex;
   justify-content: space-between;
 
-  max-width: 1462px;
-  padding: 33px 25px 42px;
+  max-width: 1464px;
   margin: 0 auto;
+  padding: 33px 25px 42px;
 
   @media (max-width: $tablet-width) {
-    padding: 20px 20px 0 22px;
+    padding: 20px 25px 0 22px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 17px 10px 0 14px;
+    padding: 17px 15px 0 14px;
   }
 }
 
 .header__logo {
   margin-right: 24px;
 
-  color: $white-color;
+  color: $white;
 
   & img {
     @media (max-width: $mobile-width) {
@@ -64,106 +62,65 @@
 
 .header__contact {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
-
-  min-width: 660px;
-
-  list-style: none;
-
-  @media (max-width: $tablet-width) {
-    min-width: 100px;
-  }
-
-  @media (max-width: $mobile-width) {
-    min-width: 80px;
-    margin-top: 10px;
-    padding-left: 0;
-  }
-
-  & li {
-    padding-bottom: 20px;
-
-    @media (max-width: $tablet-width) {
-      padding-bottom: 0;
-    }
-  }
+  justify-content: flex-end;
 }
 
-.header__contact-item {
-  position: relative;
+.header__contact-link {
+  display: flex;
+  align-items: center;
 
-  color: $white-color;
+  color: $white;
 
   font-size: 16px;
   line-height: 18px;
 
-  @media (max-width: $tablet-width) {
-    padding-right: 30px;
-    padding-left: 30px;
+  & svg {
+    fill: $blue;
   }
 
-  @media (max-width: $mobile-width) {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  &::before {
-    position: absolute;
-
-    width: 20px;
-    height: 20px;
-
-    content: "";
+  &--mail {
+    margin-right: 88px;
 
     @media (max-width: $tablet-width) {
-      width: 25px;
-      height: 25px;
+      margin-right: 32px;
     }
-  }
 
-  &--email {
-    &::before {
-      top: 3px;
-      left: -40px;
+    @media (max-width: $mobile-width) {
+      margin-right: 22px;
+    }
 
-      background: url("../img/icon-mail.svg") no-repeat;
+    & svg {
+      margin-right: 20px;
 
       @media (max-width: $tablet-width) {
-        top: 0;
-        left: 2px;
-
-        background-size: contain;
+        width: 25px;
+        height: 19px;
+        margin-right: 0;
       }
     }
   }
 
-  &--mobile {
-    padding-left: 70px;
+  &--phone {
+    margin-right: 50px;
 
     @media (max-width: $tablet-width) {
-      padding-left: 0;
+      margin-right: 0;
     }
 
-    &::before {
-      left: 36px;
-
-      background: url("../img/icon-phone.svg") no-repeat;
+    & svg {
+      margin-right: 16px;
 
       @media (max-width: $tablet-width) {
-        top: -5px;
-        left: 0;
-
-        background-size: contain;
+        width: 24px;
+        height: 24px;
+        margin-right: 0;
       }
     }
   }
 
   &--btn {
-    &::before {
-      @include hide;
-    }
-
     @media (max-width: $tablet-width) {
       display: none;
     }
@@ -174,14 +131,29 @@
       @include hide;
     }
   }
+
+  &:hover,
+  &:focus {
+    color: $blue;
+
+    & svg {
+      fill: $white;
+    }
+  }
 }
 
+.header__contact-btn {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
 
 .header__slider {
+  position: relative;
+
   max-width: 1462px;
-  width: 100%;
-  padding: 100px 25px 90px;
   margin: 0 auto;
+  padding: 0 20px 0;
 
   background: url("../img/header-decor-desktop.svg") no-repeat;
   background-position: right 42px top -27px;
@@ -200,7 +172,7 @@
 }
 
 .header__slide {
-  padding-top: 71px;
+  padding: 190px 0 90px;
 
   background: url("../img/circuit-desktop@1x.png") no-repeat;
   background-position: right;
@@ -211,7 +183,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 0;
+    padding: 117px 0 0 0;
 
     background-image: url("../img/circuit-tablet@1x.png");
     background-position: right -206px top 37px;
@@ -235,24 +207,24 @@
 
 .header__slide-text {
   position: relative;
+  z-index: 2;
 
   display: flex;
   flex-direction: column;
 
-  max-width: 880px;
+  max-width: 790px;
   padding-bottom: 185px;
-  padding-left: 84px;
+  padding-left: 0;
 
   @media (max-width: $tablet-width) {
     max-width: 570px;
-    padding-top: 117px;
     padding-bottom: 163px;
     padding-left: 90px;
   }
 
   @media (max-width: $mobile-width) {
     margin: 0 auto;
-    padding: 225px 14px 70px;
+    padding: 110px 15px 70px;
   }
 
   & h2 {
@@ -360,7 +332,7 @@
 .header__scroll {
   position: absolute;
   bottom: 38px;
-  left: 56px;
+  left: -35px;
 
   transform: rotate(270deg);
 

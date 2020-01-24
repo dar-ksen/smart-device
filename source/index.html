@@ -7,6 +7,32 @@
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "makets/sd-1920.png" );
+      }
+      /* Планшет */
+      @media ( max-width: 1023px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "makets/sd-770.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( max-width: 767px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "makets/sd-320.png" );
+        }
+      }
+    </style>
+    <link href="makets/styles.css" rel="stylesheet">
+    <script src="makets/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 <body>
   <div style="display: none;">
@@ -14,43 +40,40 @@
   </div>
 
   <header class="header">
-    <div class="header__wrap">
-      <div class="header__top">
-        <a class="header__logo logo" href="#" aria-label="Логотип Smart Device">
-          <img src="img/logo.svg" alt="Smart Device" width="52" height="52">
-          <div class="logo__text logo__text--header">
-            <span class="logo__name">Smart Device</span>
-            <span class="logo__slogan">умные технологии</span>
-          </div>
+    <div class="header__top">
+      <a class="header__logo logo" href="#" aria-label="Логотип Smart Device">
+        <img src="img/logo.svg" alt="Smart Device" width="52" height="52">
+        <div class="logo__text logo__text--header">
+          <span class="logo__name">Smart Device</span>
+          <span class="logo__slogan">умные технологии</span>
+        </div>
+      </a>
+      <div class="header__contact">
+        <a class="header__contact-link header__contact-link--mail" href="mailto:info@sd.ru" aria-label="Напишите нам">
+          <svg width="19" height="14"><use xlink:href="#icon-mail"></use>
+          </svg>
+          <span>info@sd.ru</span>
         </a>
-        <ul class="header__contact">
-          <li>
-            <a class="header__contact-item header__contact-item--email" href="mailto:info@sd.ru" aria-label="Напишите нам">
-              <span>info@sd.ru</span>
-            </a>
-          </li>
-          <li>
-            <a class="header__contact-item header__contact-item--mobile" href="tel:+74950005252" aria-label="Позвоните нам">
-              <span>+7 (495) 000 52 52</span>
-            </a>
-          </li>
-          <li>
-            <a class="header__contact-item header__contact-item--btn button" href="#">Заказать звонок</a>
-          </li>
-        </ul>
+        <a class="header__contact-link header__contact-link--phone" href="tel:+74950005252" aria-label="Позвоните нам">
+          <svg width="18" height="18">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          <span>+7 (495) 000 52 52</span>
+        </a>
+        <a class="header__contact-btn button" href="#">Заказать звонок</a>
       </div>
+    </div>
 
-      <div class="header__slider">
-        <div class="header__slide">
-          <div class="header__slide-text">
-            <h2>Печатные платы</h2>
-            <p class="header__slide-description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a class="header__consult-btn button button--consult" href="#feedback">
-              <span class="header__btn-text header__btn-text--desktop">Получить бесплатную консультацию</span>
-              <span class="header__btn-text header__btn-text--mobile">Бесплатная консультация</span>
-            </a>
-            <a class="header__scroll" href="#features">Скролл вниз</a>
-          </div>
+    <div class="header__slider">
+      <div class="header__slide">
+        <div class="header__slide-text">
+          <h2>Печатные платы</h2>
+          <p class="header__slide-description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a class="header__consult-btn button button--consult" href="#feedback">
+            <span class="header__btn-text header__btn-text--desktop">Получить бесплатную консультацию</span>
+            <span class="header__btn-text header__btn-text--mobile">Бесплатная консультация</span>
+          </a>
+          <a class="header__scroll" href="#features">Скролл вниз</a>
         </div>
       </div>
     </div>
@@ -103,7 +126,7 @@
 
     <section class="service">
       <div class="container">
-        <h2>Service Device предлагает следующие товары и услуги</h2>
+        <h2>Service Device предлагает следующие товары и&nbsp;услуги</h2>
         <ul class="service__list">
           <li class="service__item">
             <a class="service__link service__link--prop" href="">
@@ -117,7 +140,7 @@
           </li>
           <li class="service__item">
             <a class="service__link service__link--comp" href="">
-              <h3>Комплектующие для светотехники</h3>
+              <h3>Комплектующие для&nbsp;светотехники</h3>
             </a>
           </li>
         </ul>

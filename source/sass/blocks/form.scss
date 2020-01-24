@@ -8,7 +8,7 @@
   }
 
   & textarea {
-    padding: 13px;
+    padding: 13px 18px;
 
     resize: none;
 
@@ -60,6 +60,8 @@
     position: relative;
     padding-left: 32px;
     color: $white-80;
+    font-size: 14px;
+    line-height: 16px;
 
     &::before {
       position: absolute;

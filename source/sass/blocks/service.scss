@@ -1,5 +1,5 @@
 .service {
-  padding: 93px 0 127px;
+  padding: 93px 0 130px;
 
   background-color: #1b2d37;
 
@@ -70,6 +70,10 @@
 
   width: 100%;
   padding: 53px 30px 53px 43px;
+
+  @media (max-width: $tablet-width) {
+    padding: 44px 30px 53px 44px;
+  }
 
   &::before {
     position: absolute;

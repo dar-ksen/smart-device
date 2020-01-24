@@ -1,9 +1,10 @@
 .feedback {
-  padding: 83px 0 103px;
+  padding: 95px 0 75px;
 
   background: $blue url("../img/form-right-decor.svg") no-repeat right;
 
   @media (max-width: $tablet-width) {
+    padding: 84px 0 75px;
     background-image: none;
   }
 
@@ -20,8 +21,8 @@
 
   &::after {
     position: absolute;
-    top: -160px;
-    left: -160px;
+    top: -154px;
+    left: -175px;
 
     width: 686px;
     height: 641px;
@@ -53,7 +54,7 @@
   width: 48.7%;
 
   & h2 {
-    margin: 0 0 17px;
+    margin: 0 0 10px;
 
     color: $white;
 
@@ -63,7 +64,7 @@
     line-height: 51px;
 
     @media (max-width: $tablet-width) {
-      margin-bottom: 7px;
+      margin-bottom: 18px;
 
       font-size: 32px;
       line-height: 140.62%;
