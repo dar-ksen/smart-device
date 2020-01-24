@@ -1,18 +1,18 @@
 .service {
-  padding: 93px 0 130px;
+  padding: 90px 0 127px;
 
   background-color: #1b2d37;
 
   @media (max-width: $tablet-width) {
-    padding: 53px 0 78px;
+    padding: 50px 0 78px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 53px 0 64px;
+    padding: 50px 0 64px;
   }
 
   & h2 {
-    margin: 0;
+    margin: 0 0 4px;
 
     color: $white-color;
 
@@ -27,7 +27,8 @@
     }
 
     @media (max-width: $mobile-width) {
-      margin-bottom: 7px;
+      margin-bottom: 13px;
+      padding: 0 8px;
 
       font-size: 28px;
     }
@@ -69,10 +70,14 @@
   position: relative;
 
   width: 100%;
-  padding: 53px 30px 53px 43px;
+  padding: 50px 30px 53px 43px;
 
   @media (max-width: $tablet-width) {
-    padding: 44px 30px 53px 44px;
+    padding: 42px 30px 53px 44px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 20px 30px 53px 35px;
   }
 
   &::before {

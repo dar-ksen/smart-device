@@ -1,11 +1,25 @@
 .social-links {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 112px;
 
   @include reset-list;
 }
 
 .social-links__link {
-  margin-right: 15px;
+  svg {
+    transition: 0.3s;
+
+    fill: $grey;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $blue;
+    }
+  }
 }

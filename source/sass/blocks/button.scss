@@ -16,7 +16,8 @@
   font-weight: 700;
   line-height: 16px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
     color: $white;
     border-color: $blue;
@@ -44,7 +45,8 @@
       letter-spacing: 0.9px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $blue;
       border-color: $white;
       background-color: $white;

@@ -15,10 +15,11 @@
 }
 
 .acordion__toggle {
-  display: none;
   position: absolute;
   top: 0;
-  right: 15px;
+  right: 3px;
+
+  display: none;
 
   width: 16px;
   height: 16px;
@@ -39,8 +40,9 @@
       height: 2px;
 
       content: "";
-      background-color: #c4c4c4;
       transition: transform 0.3s;
+
+      background-color: #c4c4c4;
     }
   }
 }

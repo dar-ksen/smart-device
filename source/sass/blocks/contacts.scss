@@ -3,19 +3,28 @@
 }
 
 .contacts__list {
-  margin: 29px 0 0;
+  margin: 25px 0 0;
   padding-left: 0;
 
   list-style: none;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
+  }
 }
 
 .contacts__item {
-  color: rgba(27, 45, 55, 0.5);
-
   font-size: 15px;
   line-height: 25px;
 }
 
 .contacts__link {
-  color: inherit;
+  transition: color 0.3s;
+
+  color: $footer-link-50;
+
+  &:hover,
+  &:focus {
+    color: $footer-link;
+  }
 }

@@ -1,8 +1,13 @@
 .copyright {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .copyright__wrap-desctop {
@@ -10,6 +15,7 @@
   justify-content: space-between;
 
   width: 457px;
+  margin-right: 10.06%;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -19,10 +25,32 @@
 .copyright__item {
   letter-spacing: 0.04em;
 
+  color: $footer-link-50;
+
   font-size: 13px;
   line-height: 24px;
+
+  &--dev {
+    margin-left: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 22px;
+
+    &--dev {
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+  }
 }
 
 .copyright__link {
-  color: #1b2d37;
+  transition: color 0.3s;
+
+  color: $footer-link-50;
+
+  &:hover,
+  &:focus {
+    color: $footer-link;
+  }
 }

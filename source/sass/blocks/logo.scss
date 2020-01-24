@@ -4,8 +4,15 @@
 
   min-width: 216px;
 
+  transition: 0.3s;
+
   @media (max-width: $mobile-width) {
     min-width: 193px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $blue;
   }
 }
 
@@ -30,6 +37,8 @@
   line-height: 40px;
 
   &--footer {
+    color: #203c42;
+
     font-size: 25px;
   }
 }

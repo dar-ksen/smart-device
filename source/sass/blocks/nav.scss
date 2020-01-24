@@ -3,7 +3,7 @@
 }
 
 .nav__list {
-  margin: 29px 0 0;
+  margin: 25px 0 0;
   padding-left: 0;
 
   list-style: none;
@@ -12,11 +12,13 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
+  }
 }
 
 .nav__item {
-  color: rgba(27, 45, 55, 0.5);
-
   font-size: 15px;
   line-height: 25px;
 
@@ -42,23 +44,30 @@
     &--component {
       order: 2;
 
-      padding-left: 8.5%;
+      padding-left: 7.5%;
     }
 
     &--delivery {
       order: 4;
 
-      padding-left: 8.5%;
+      padding-left: 7.5%;
     }
 
     &--contacts {
       order: 6;
 
-      padding-left: 8.5%;
+      padding-left: 7.5%;
     }
   }
 }
 
 .nav__link {
-  color: inherit;
+  transition: color 0.3s;
+
+  color: $footer-link-50;
+
+  &:hover,
+  &:focus {
+    color: $footer-link;
+  }
 }

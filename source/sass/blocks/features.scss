@@ -6,7 +6,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 37px 0;
+    //TODO: Добавил для игнорирования погрешностей макета данного блока в мобильной версии. Удалить в конечной версии.
+    height: 1223px;
+    padding: 17px 0 30px;
   }
 }
 
@@ -53,13 +55,14 @@
     width: 47.91%;
     min-height: auto;
     margin: 30px 4.166% 0 0;
-    padding: 25px 21px 20px 25px;
+    padding: 26px 21px 20px 25px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     max-width: none;
-    margin-right: 0;
+    min-height: 232px;
+    margin: 20px 0 0;
   }
 
   & svg {
@@ -73,6 +76,10 @@
       width: 32px;
       height: 32px;
       margin-bottom: 6px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 10px;
     }
   }
 
