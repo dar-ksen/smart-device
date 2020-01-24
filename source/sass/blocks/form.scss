@@ -1,0 +1,93 @@
+.form {
+  & input[type="text"],
+  & input[type="tel"] {
+    height: 50px;
+    padding-left: 17px;
+
+    border-radius: 0;
+  }
+
+  & textarea {
+    padding: 13px;
+
+    resize: none;
+
+    border-radius: 0;
+  }
+
+  & input[type="text"],
+  & input[type="tel"],
+  & textarea {
+    color: $white;
+    border: none;
+    background-color: $white-10;
+
+    font: inherit;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  & button {
+    padding: 13px 0;
+
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: transparent;
+
+    border: 1px $white solid;
+    border-radius: 5px;
+    color: $white;
+
+    font-family: $roboto-condensed;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $blue;
+    }
+  }
+
+  & input[type="checkbox"] + label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 32px;
+    color: $white-80;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      border: 1px solid $white;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  & input[type="checkbox"]:checked + label::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 8px;
+    border-top: 2px solid $white;
+    border-left: 2px solid $white;
+    top: 2px;
+    left: 5px;
+    transform: rotate(-135deg);
+  }
+
+  & input[type="checkbox"] {
+    &:focus + label,
+    &:hover + label {
+      color: $white;
+    }
+  }
+}

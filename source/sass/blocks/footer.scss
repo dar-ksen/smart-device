@@ -10,12 +10,12 @@
   display: flex;
   flex-wrap: wrap;
 
-  max-width: 1412px;
+  max-width: 1462px;
   margin: 0 auto;
   padding: 65px 25px 55px;
 
   @media (max-width: $tablet-width) {
-    padding: 0 0 36px 0;
+    padding: 0;
   }
 }
 
@@ -34,7 +34,7 @@
 }
 
 .footer__header h2 {
-  margin: 0 0 29px;
+  margin: 0;
 
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -94,7 +94,7 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    padding-bottom: 23px;
+    padding: 38px 15px 23px;
 
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
@@ -109,6 +109,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    padding: 38px 15px 23px;
     width: 100%;
   }
 }

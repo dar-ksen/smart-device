@@ -7,7 +7,7 @@
 
       & .acordion__toggle {
         &::after {
-          transform: rotate(0deg);
+          transform: rotate(90deg);
         }
       }
     }
@@ -41,10 +41,6 @@
       content: "";
       background-color: #c4c4c4;
       transition: transform 0.3s;
-    }
-
-    &::after {
-      transform: rotate(90deg);
     }
   }
 }

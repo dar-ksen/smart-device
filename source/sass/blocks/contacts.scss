@@ -3,13 +3,17 @@
 }
 
 .contacts__list {
-  @include reset-list;
+  margin: 29px 0 0;
+  padding-left: 0;
+
+  list-style: none;
 }
 
 .contacts__item {
+  color: rgba(27, 45, 55, 0.5);
+
   font-size: 15px;
   line-height: 25px;
-  color: rgba(27, 45, 55, 0.5);
 }
 
 .contacts__link {

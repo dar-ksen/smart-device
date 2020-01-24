@@ -6,6 +6,10 @@
   @media (max-width: $tablet-width) {
     background-image: none;
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 33px 0 11px;
+  }
 }
 
 .feedback__wrap {
@@ -14,8 +18,30 @@
   display: flex;
   flex-direction: row-reverse;
 
+  &::after {
+    position: absolute;
+    top: -160px;
+    left: -160px;
+
+    width: 686px;
+    height: 641px;
+
+    content: "";
+
+    background: url("../img/form-airplane@1px.png") no-repeat top left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/form-airplane@2px.png");
+      background-size: 686px 641px;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     padding: 0 88px;
+
+    &::after {
+      content: none;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -35,12 +61,30 @@
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 7px;
+
+      font-size: 32px;
+      line-height: 140.62%;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 16px;
+
+      font-size: 28px;
+    }
   }
 
   & p {
     margin: 0 0 49px;
 
     color: $white;
+
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 24px;
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -51,65 +95,6 @@
 .feedback__form {
   display: flex;
   flex-wrap: wrap;
-
-  & input[type="text"],
-  & input[type="tel"] {
-    width: 47.36%;
-    height: 50px;
-    padding-left: 17px;
-
-    border-radius: 0;
-  }
-
-  & textarea {
-    width: 100%;
-    height: 154px;
-    padding: 13px;
-
-    resize: none;
-
-    border-radius: 0;
-  }
-
-  & input[type="text"],
-  & input[type="tel"],
-  & textarea {
-    color: $white;
-    border: none;
-    background-color: $white-10;
-
-    font: inherit;
-
-    &::placeholder {
-      color: $white;
-    }
-  }
-
-  & button {
-    padding: 13px 0;
-
-    cursor: pointer;
-    transition: 0.3s;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    background-color: transparent;
-
-    border: 1px $white solid;
-    border-radius: 5px;
-    color: $white;
-
-    font-family: $roboto-condensed;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-
-    &:hover,
-    &:focus {
-      background-color: $white;
-      color: $blue;
-    }
-  }
 }
 
 .feedback__item {
@@ -121,36 +106,52 @@
   width: 100%;
   margin-bottom: 40px;
 
-  &--sumbit button {
-    width: 47.36%;
+  &--contact {
+    & input[type="text"],
+    & input[type="tel"] {
+      width: 47.36%;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 0;
+
+      & input[type="text"],
+      & input[type="tel"] {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
   }
 
-  & input[type="checkbox"]:checked + label::after {
-    position: absolute;
-    content: "";
-    width: 6px;
-    height: 8px;
-    border-top: 2px solid $white;
-    border-left: 2px solid $white;
-    top: 2px;
-    left: 5px;
-    transform: rotate(-135deg);
+  &--message {
+    & textarea {
+      height: 154px;
+      width: 100%;
+
+      @media (max-width: $tablet-width) {
+        height: 160px;
+      }
+
+      @media (max-width: $mobile-width) {
+        height: 104px;
+      }
+    }
   }
 
-  &--sumbit label {
-    position: relative;
-    width: 47.36%;
-    padding-left: 32px;
-    color: $white-80;
+  &--sumbit {
+    & button,
+    & label {
+      width: 47.36%;
+    }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 16px;
-      border: 1px solid $white;
-      top: 0;
-      left: 0;
+    @media (max-width: $mobile-width) {
+      margin-bottom: 0;
+
+      & button,
+      & label {
+        width: 100%;
+        margin-bottom: 30px;
+      }
     }
   }
 }
