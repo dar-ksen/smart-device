@@ -169,8 +169,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-position: left 70px top -125px;
-    background-size: 595px 550px;
+    background-position: left 67px top -112px;
+    background-size: 596px 535px;
   }
 }
 
@@ -191,7 +191,7 @@
     padding: 117px 0 0 0;
 
     background-image: url("../img/circuit-tablet@1x.png");
-    background-position: right -205px top 41px;
+    background-position: right -205px top 37px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/circuit-tablet@2x.png");
@@ -201,7 +201,7 @@
 
   @media (max-width: $mobile-width) {
     background-image: url("../img/circuit-mobile@1x.png");
-    background-position: right -37% top 31px;
+    background-position: right -37% top 37px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/circuit-mobile@2x.png");

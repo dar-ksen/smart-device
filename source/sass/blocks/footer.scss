@@ -61,7 +61,7 @@
 .footer__year {
   display: none;
 
-  margin: 5px 0 0;
+  margin: 5px 0 0 13px;
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -74,7 +74,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 32px;
+    margin: 5px 0 32px;
   }
 }
 
