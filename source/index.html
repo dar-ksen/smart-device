@@ -11,6 +11,32 @@
   <link rel="preload" href="fonts/roboto.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotocondensed.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font" crossorigin="anonymous">
+  <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "makets/sd-1920.png" );
+      }
+      /* Планшет */
+      @media ( max-width: 1023px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "makets/sd-770.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( max-width: 767px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "makets/sd-320.png" );
+        }
+      }
+    </style>
+    <link href="makets/styles.css" rel="stylesheet">
+    <script src="makets/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 <body>
   <div style="display: none;">
