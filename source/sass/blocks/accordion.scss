@@ -11,6 +11,16 @@
         }
       }
     }
+
+    &--nojs {
+      & .acordion__body {
+        display: block;
+      }
+
+      & .acordion__toggle {
+        display: none;
+      }
+    }
   }
 }
 

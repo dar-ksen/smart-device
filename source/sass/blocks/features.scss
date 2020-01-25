@@ -2,7 +2,7 @@
   padding: 80px 0 30px;
 
   @media (max-width: $tablet-width) {
-    padding: 24px 0 30px;
+    padding: 24px 0 20px;
   }
 
   @media (max-width: $mobile-width) {
@@ -26,7 +26,7 @@
   max-width: 570px;
   min-height: 300px;
   margin: 30px 2.56% 0 0;
-  padding: 40px 40px 40px 42px;
+  padding: 96px 40px 40px 42px;
 
   cursor: pointer;
   transition: background-color 0.9s;
@@ -53,32 +53,41 @@
 
   @media (max-width: $tablet-width) {
     width: 47.91%;
-    min-height: auto;
+    min-height: 232px;
     margin: 30px 4.166% 0 0;
-    padding: 26px 21px 20px 25px;
+    padding: 65px 21px 20px 25px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     max-width: none;
-    min-height: 232px;
     margin: 20px 0 0;
+    padding-top: 72px;
+    padding-bottom: 24px;
+
+    &--suppliers {
+      padding-right: 12px;
+    }
   }
 
   & svg {
-    margin-bottom: 15px;
+    position: absolute;
+    top: 40px;
+    left: 45px;
 
-    transition: fill 0.9s;
+    transition: fill 0.3s;
 
     fill: $blue-color;
 
     @media (max-width: $tablet-width) {
-      width: 32px;
-      height: 32px;
-      margin-bottom: 6px;
+      top: 24px;
+      left: 24px;
     }
 
     @media (max-width: $mobile-width) {
+      width: 32px;
+      height: 32px;
+
       margin-bottom: 10px;
     }
   }
@@ -86,13 +95,13 @@
   & h3 {
     margin: 0 0 15px;
 
-    transition: color 0.9s;
+    transition: color 0.3s;
 
     color: $blue-color;
 
     font-family: $roboto-condensed;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 34px;
 
     @media (max-width: $tablet-width) {
@@ -108,10 +117,10 @@
   & p {
     margin: 0;
 
-    transition: color 0.9s;
+    transition: color 0.3s;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 22px;
   }
 

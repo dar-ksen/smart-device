@@ -22,7 +22,7 @@
 
   &::after {
     position: absolute;
-    top: -154px;
+    top: -150px;
     left: -175px;
 
     width: 686px;
@@ -61,7 +61,7 @@
 
     font-family: $roboto-condensed;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 51px;
 
     @media (max-width: $tablet-width) {
@@ -163,7 +163,7 @@
 
   &--sumbit {
     & button,
-    & label {
+    & .feedback__consent {
       width: 47.36%;
     }
 
@@ -175,7 +175,7 @@
         margin-bottom: 30px;
       }
 
-      & label {
+      & .feedback__consent {
         width: 100%;
       }
     }

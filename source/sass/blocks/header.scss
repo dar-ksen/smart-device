@@ -155,7 +155,6 @@
 .header__slider {
   position: relative;
 
-  padding: 0 20px 0;
   max-width: 1920px;
   margin: 0 auto;
 
@@ -165,8 +164,8 @@
   @media (max-width: $tablet-width) {
     padding: 0;
 
-    background-position: right -130px top -110px;
-    background-size: 530px 505px;
+    background-position: right -192px top -160px;
+    background-size: 604px 637px;
   }
 
   @media (max-width: $mobile-width) {
@@ -176,11 +175,11 @@
 }
 
 .header__slide {
-  margin-left: 12.1%;
+  margin-left: 13.1%;
   padding: 190px 0 90px;
 
   background: url("../img/circuit-desktop@1x.png") no-repeat;
-  background-position: right 13% top 40px;
+  background-position: right 15% top 40px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/circuit-desktop@2x.png");
@@ -192,7 +191,7 @@
     padding: 117px 0 0 0;
 
     background-image: url("../img/circuit-tablet@1x.png");
-    background-position: right -206px top 37px;
+    background-position: right -205px top 41px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/circuit-tablet@2x.png");
@@ -236,7 +235,7 @@
   & h2 {
     margin: 0;
 
-    letter-spacing: 5.5px;
+    letter-spacing: 0.07em;
     text-transform: uppercase;
 
     font-family: $roboto-condensed;

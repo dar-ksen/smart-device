@@ -13,6 +13,18 @@
 
   background-color: $blue;
 
+  & input[type="checkbox"] + label {
+    &::before {
+      top: -1px;
+      left: 0;
+    }
+  }
+
+  & input[type="checkbox"]:checked + label::after {
+    top: 1px;
+    left: 5px;
+  }
+
   &--show {
     display: block;
   }
@@ -24,7 +36,7 @@
 
     font-family: $roboto-condensed;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 140.62%;
   }
 
