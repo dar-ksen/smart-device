@@ -30,9 +30,12 @@
       color: $white;
     }
 
-    &:hover,
     &:focus {
       background-color: $white-30;
+    }
+
+    &:hover {
+      background-color: $white-50;
     }
   }
 

@@ -48,7 +48,11 @@
 
     content: "";
 
-    background-color: $blue-color;
+    background-color: $blue;
+
+    @media (max-width: $tablet-width) {
+      width: 2px;
+    }
   }
 
   @media (max-width: $tablet-width) {
