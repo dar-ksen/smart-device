@@ -159,7 +159,7 @@
   margin: 0 auto;
 
   background: url("../img/header-decor-desktop.svg") no-repeat;
-  background-position: right 16% top -110px;
+  background-position: left 83.9% top -110px;
 
   @media (max-width: $tablet-width) {
     padding: 0;
@@ -175,11 +175,10 @@
 }
 
 .header__slide {
-  margin-left: 13.1%;
   padding: 190px 0 90px;
 
   background: url("../img/circuit-desktop@1x.png") no-repeat;
-  background-position: right 15% top 40px;
+  background-position: left 88.2% top 40px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/circuit-desktop@2x.png");
@@ -210,6 +209,16 @@
   }
 }
 
+.header__wrap {
+  max-width: 1468px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
+}
+
 .header__slide-text {
   position: relative;
   z-index: 2;
@@ -222,14 +231,14 @@
   padding-left: 0;
 
   @media (max-width: $tablet-width) {
-    max-width: 570px;
+    max-width: 544px;
     padding-bottom: 163px;
-    padding-left: 90px;
+    padding-left: 65px;
   }
 
   @media (max-width: $mobile-width) {
     margin: 0 auto;
-    padding: 114px 15px 70px;
+    padding: 114px 0 70px;
   }
 
   & h2 {
