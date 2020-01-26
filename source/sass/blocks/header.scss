@@ -1,31 +1,24 @@
 .header {
   color: $white;
-  background-color: $bg-header-color;
-  background-image: url("../img/header-bg-desktop@1x.png");
-  background-position: center;
+  background: $bg-header-color url("../img/header-bg-desktop@1x.png") center / cover no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header-bg-desktop@2x.png");
-    background-size: 1920px 878px;
   }
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/header-bg-tablet@1x.png");
-    background-position: left 37% bottom -56px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header-bg-tablet@2x.png");
-      background-size: 1774px 922px;
     }
   }
 
   @media (max-width: $mobile-width) {
     background-image: url("../img/header-bg-mobile@1x.png");
-    background-position: right -751px bottom -54px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header-bg-mobile@2x.png");
-      background-size: 1695px 881px;
     }
   }
 }
