@@ -8,7 +8,7 @@
   var userName = modal.querySelector('#user-name-modal');
   var userPhone = modal.querySelector('#user-phone-modal');
   var userMessage = modal.querySelector('#user-message-modal');
-  var closeBtnModal = modal.querySelector('.modal__close');
+  var closeModalBtn = modal.querySelector('.modal__close');
   var overlay = document.querySelector('.overlay');
 
   var isStorageSupport = true;
@@ -42,7 +42,7 @@
 
     overlay.addEventListener('click', onCloseModalHandler);
     document.addEventListener('keydown', onEscKeyPressHandler);
-    closeBtnModal.addEventListener('click', onCloseModalHandler);
+    closeModalBtn.addEventListener('click', onCloseModalHandler);
   };
 
   var submitFormPopup = function () {
@@ -57,7 +57,7 @@
     modal.classList.remove('modal--show');
     body.classList.remove('modal--open');
     overlay.classList.remove('overlay--show');
-    closeBtnModal.removeEventListener('click', onCloseModalHandler);
+    closeModalBtn.removeEventListener('click', onCloseModalHandler);
     document.removeEventListener('keydown', onEscKeyPressHandler);
   };
 
