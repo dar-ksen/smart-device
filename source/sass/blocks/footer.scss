@@ -1,3 +1,7 @@
+.footer {
+  flex: 0 0 auto;
+}
+
 .footer__wrap {
   border-bottom: 1px solid rgba(98, 105, 98, 0.2);
 }
@@ -15,7 +19,6 @@
     padding: 0;
   }
 }
-
 
 .footer__social {
   display: flex;

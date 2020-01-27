@@ -7,6 +7,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 a {
@@ -17,6 +18,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  height: 100%;
 
   color: $main-color;
   background-color: $bg-main-color;
@@ -24,6 +26,16 @@ body {
   font-family: $pt-mono;
   font-size: 16px;
   font-weight: normal;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 .modal--open {
