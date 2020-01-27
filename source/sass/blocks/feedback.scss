@@ -1,5 +1,5 @@
 .feedback {
-  padding: 90px 0 75px;
+  padding: 90px 0 80px;
 
   background: url("../img/form-right-decor.svg") no-repeat left calc(50% + 778px) top 35px,
     url("../img/form-airplane@1px.png") no-repeat right calc(50% + 442px) top -60px / 686px 641px;
@@ -11,13 +11,13 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 80px 0 65px;
+    padding: 80px 0 75px;
 
     background-image: none;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 30px 0 42px;
+    padding: 30px 0 12px;
   }
 }
 
@@ -97,51 +97,37 @@
   justify-content: space-between;
 
   width: 100%;
-  margin-bottom: 40px;
 
   &--contact {
-    margin-bottom: 42px;
-
     & input[type="text"],
     & input[type="tel"] {
       width: 47.36%;
+      margin-bottom: 42px;
     }
 
     @media (max-width: $mobile-width) {
-      margin-bottom: 33px;
-
-      & input[type="text"] {
-        width: 100%;
-        margin-bottom: 33px;
-      }
-
+      & input[type="text"],
       & input[type="tel"] {
         width: 100%;
+        margin-bottom: 33px;
       }
     }
   }
 
   &--message {
-    margin-bottom: 43px;
-
-    @media (max-width: $tablet-width) {
-      margin-bottom: 46px;
-    }
-
-    @media (max-width: $mobile-width) {
-      margin-bottom: 33px;
-    }
-
     & textarea {
       width: 100%;
       height: 154px;
+      margin-bottom: 48px;
 
       @media (max-width: $tablet-width) {
         height: 160px;
+        margin-bottom: 46px;
       }
 
       @media (max-width: $mobile-width) {
         height: 104px;
+        margin-bottom: 33px;
       }
     }
   }
@@ -150,16 +136,13 @@
     & button,
     & .feedback__consent {
       width: 47.36%;
+      margin-bottom: 30px;
     }
 
     @media (max-width: $mobile-width) {
       margin-bottom: 0;
 
-      & button {
-        width: 100%;
-        margin-bottom: 30px;
-      }
-
+      & button,
       & .feedback__consent {
         width: 100%;
       }

@@ -67,9 +67,7 @@
 
   var onEscKeyPressHandler = function (evt) {
     if (evt.keyCode === ESC_CODE) {
-      if (userName !== document.activeElement && userPhone !== document.activeElement && userMessage !== document.activeElement) {
-        closeModal();
-      }
+      closeModal();
     }
   };
 

@@ -8,7 +8,6 @@
 
 .footer__top {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 
   max-width: 1468px;
@@ -17,14 +16,17 @@
 
   @media (max-width: $tablet-width) {
     padding: 0;
+    flex-wrap: wrap;
   }
 }
 
 .footer__social {
   display: flex;
   flex-direction: column;
+  margin-right: 7.2%;
 
   @media (max-width: $tablet-width) {
+    margin-right: 0;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -96,13 +98,8 @@
 }
 
 .footer__nav {
-  width: 38.173%;
-
-  @media (min-width: 1250px) {
-    margin-left: 6.25%;
-  }
-
   @media (max-width: $tablet-width) {
+    margin: 0;
     width: 50%;
     padding: 38px 25px 36px;
   }

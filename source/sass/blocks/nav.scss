@@ -3,8 +3,10 @@
 }
 
 .nav__list {
+  max-width: 560px;
   margin: 25px 0 0;
   padding-left: 0;
+  justify-content: space-between;
 
   list-style: none;
 
@@ -23,7 +25,8 @@
   line-height: 25px;
 
   @media (min-width: $desctop-width-only) {
-    width: 50%;
+    width: 245px;
+    padding-right: 10px;
 
     &--about {
       order: 1;
@@ -43,20 +46,14 @@
 
     &--component {
       order: 2;
-
-      padding-left: 7.5%;
     }
 
     &--delivery {
       order: 4;
-
-      padding-left: 7.5%;
     }
 
     &--contacts {
       order: 6;
-
-      padding-left: 7.5%;
     }
   }
 }
