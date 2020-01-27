@@ -156,7 +156,7 @@
   margin: 0 auto;
 
   background: url("../img/header-decor-desktop.svg") no-repeat;
-  background-position: left 83.9% top -110px;
+  background-position: left calc(50% + 386px) top -110px;
 
   @media (max-width: $tablet-width) {
     padding: 0;
@@ -175,7 +175,7 @@
   padding: 190px 0 90px;
 
   background: url("../img/circuit-desktop@1x.png") no-repeat;
-  background-position: left 88.2% top 40px;
+  background-position: left calc(50% + 465px) top 40px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/circuit-desktop@2x.png");
