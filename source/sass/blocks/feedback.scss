@@ -1,7 +1,14 @@
 .feedback {
   padding: 90px 0 75px;
 
-  background: $blue url("../img/form-right-decor.svg") no-repeat right top 35px;
+  background: url("../img/form-right-decor.svg") no-repeat left calc(50% + 778px) top 35px,
+    url("../img/form-airplane@1px.png") no-repeat right calc(50% + 442px) top -60px / 686px 641px;
+  background-color: $blue;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/form-right-decor.svg"),
+      url("../img/form-airplane@2px.png");
+  }
 
   @media (max-width: $tablet-width) {
     padding: 80px 0 65px;
@@ -20,30 +27,8 @@
   display: flex;
   flex-direction: row-reverse;
 
-  &::after {
-    position: absolute;
-    top: -150px;
-    left: -175px;
-
-    width: 686px;
-    height: 641px;
-
-    content: "";
-
-    background: url("../img/form-airplane@1px.png") no-repeat top left;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/form-airplane@2px.png");
-      background-size: 686px 641px;
-    }
-  }
-
   @media (max-width: $tablet-width) {
     padding: 0 92px;
-
-    &::after {
-      content: none;
-    }
   }
 
   @media (max-width: $mobile-width) {
