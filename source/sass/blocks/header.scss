@@ -137,6 +137,10 @@
       fill: $white;
     }
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header__contact-btn {
@@ -337,6 +341,7 @@
 }
 
 .header__scroll {
+  transition: 0.3s;
   position: absolute;
   bottom: 38px;
   left: -35px;
@@ -351,8 +356,13 @@
     @include hide;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
     color: $white-color;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

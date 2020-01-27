@@ -207,9 +207,11 @@
     &::before {
       opacity: 0.6;
     }
+  }
 
-    &::after {
-      background-size: 15%;
+  &:active {
+    &::before {
+      opacity: 1;
     }
   }
 }

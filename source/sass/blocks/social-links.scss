@@ -22,4 +22,10 @@
       fill: $blue;
     }
   }
+
+  &:active {
+    svg {
+      opacity: 0.6;
+    }
+  }
 }

@@ -27,4 +27,8 @@
   &:focus {
     color: $footer-link;
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
