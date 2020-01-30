@@ -1,6 +1,5 @@
 .copyright {
   display: flex;
-  flex-wrap: wrap;
 
   text-transform: uppercase;
 
@@ -14,8 +13,9 @@
   display: flex;
   justify-content: space-between;
 
-  width: 457px;
+  max-width: 457px;
   margin-right: 10.06%;
+  flex-grow: 1;
 
   @media (max-width: $tablet-width) {
     display: none;
