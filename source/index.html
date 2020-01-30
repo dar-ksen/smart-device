@@ -254,27 +254,29 @@
   </div>
 
   <section class="modal">
-    <h2>Закажите звонок</h2>
-    <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
-    <form class="modal__form form" method="post" action="#">
-      <label class="visually-hidden" for="user-name-modal">Ваше имя</label>
-      <input type="text" name="user-name" placeholder="Имя" id="user-name-modal" required>
+    <div class="modal__wrap">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
+      <form class="modal__form form" method="post" action="#">
+        <label class="visually-hidden" for="user-name-modal">Ваше имя</label>
+        <input type="text" name="user-name" placeholder="Имя" id="user-name-modal" required>
 
-      <label class="visually-hidden" for="user-phone-modal">Ваш номер</label>
-      <input type="tel" name="user-phone" placeholder="Телефон" id="user-phone-modal" required>
+        <label class="visually-hidden" for="user-phone-modal">Ваш номер</label>
+        <input type="tel" name="user-phone" placeholder="Телефон" id="user-phone-modal" required>
 
-      <label class="visually-hidden" for="user-message-modal">Ваше сообщение</label>
-      <textarea name="user-message" placeholder="Ваш вопрос" id="user-message-modal" required></textarea>
+        <label class="visually-hidden" for="user-message-modal">Ваше сообщение</label>
+        <textarea name="user-message" placeholder="Ваш вопрос" id="user-message-modal" required></textarea>
 
-      <button type="submit">Отправить</button>
-      <div class="form__consent">
-        <input class="visually-hidden" type="checkbox" name="consent" id="consent-modal" required>
-        <label for="consent-modal">Я согласен на обработку  персональных данных</label>
-      </div>
-    </form>
-    <button class="modal__close" type="reset" aria-label="Закрыть модальное окно"></button>
+        <button type="submit">Отправить</button>
+        <div class="form__consent">
+          <input class="visually-hidden" type="checkbox" name="consent" id="consent-modal" required>
+          <label for="consent-modal">Я согласен на обработку  персональных данных</label>
+        </div>
+      </form>
+      <button class="modal__close" type="reset" aria-label="Закрыть модальное окно"></button>
+    </div>
+    <div class="overlay"></div>
   </section>
-  <div class="overlay"></div>
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
