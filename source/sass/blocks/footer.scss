@@ -41,14 +41,14 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 46px 25px 49px;
+    padding: 46px 25px 41px;
   }
 }
 
 .footer__logo {
   align-self: baseline;
 
-  margin-bottom: 54px;
+  margin-bottom: 46px;
 
   color: #203c42;
 
@@ -79,7 +79,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin: 5px 0 32px;
+    margin: 5px 0 24px;
   }
 }
 
